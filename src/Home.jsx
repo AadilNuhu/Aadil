@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { FaSearch,FaCode,FaRocket,FaBook,FaLaptopCode,FaShoppingCart,FaCog, FaPencilRuler, FaUserTie, FaLayerGroup, FaVial } from 'react-icons/fa';
 
 const Home = () => {
     const [currentText, setCurrentText] = useState('');
@@ -49,37 +50,37 @@ const Home = () => {
             number: "01",
             title: "Discovery",
             description: "I begin by thoroughly understanding your project requirements, business goals, and target audience through detailed discussions and research.",
-            icon: "🔍"
+            icon: <FaSearch className='text-blue-300' />
         },
         {
             number: "02",
             title: "Planning",
             description: "I create a comprehensive project roadmap with milestones, deliverables, and timelines to ensure we're aligned on expectations.",
-            icon: "📝"
+            icon: <FaBook className='text-blue-300' />
         },
         {
             number: "03",
             title: "Design",
             description: "I craft intuitive user interfaces and experiences with wireframes and prototypes, focusing on usability and aesthetic appeal.",
-            icon: "🎨"
+            icon: <FaPencilRuler className='text-blue-300'/>
         },
         {
             number: "04",
             title: "Development",
             description: "Using modern technologies and best practices, I build robust, scalable solutions with clean, maintainable code.",
-            icon: "💻"
+            icon: <FaCode className='text-blue-300'/>
         },
         {
             number: "05",
             title: "Testing",
             description: "I rigorously test the product across devices and scenarios to ensure flawless performance and user experience.",
-            icon: "🧪"
+            icon: <FaVial className='text-blue-300'/>
         },
         {
             number: "06",
             title: "Launch & Support",
             description: "After deployment, I provide ongoing support and maintenance to keep your digital product running smoothly.",
-            icon: "🚀"
+            icon: <FaRocket className='text-blue-300' />
         }
     ];
 
@@ -87,7 +88,7 @@ const Home = () => {
         {
             title: "Web Development",
             description: "Custom, responsive websites built with modern technologies like React, Next.js, and Tailwind CSS for optimal performance and user experience.",
-            icon: "💻",
+            icon: <FaLaptopCode className='text-gray-900' />,
             features: [
                 "Responsive Design",
                 "SEO Optimized",
@@ -98,7 +99,7 @@ const Home = () => {
         {
             title: "UI/UX Design",
             description: "Beautiful, intuitive interfaces designed to engage users and drive conversions with thoughtful user journeys.",
-            icon: "🎨",
+            icon: <FaPencilRuler />,
             features: [
                 "Wireframing & Prototyping",
                 "User Research",
@@ -109,7 +110,7 @@ const Home = () => {
         {
             title: "Full-Stack Solutions",
             description: "Complete web applications with both frontend and backend development using technologies like Node.js, Express, and MongoDB.",
-            icon: "🔗",
+            icon: <FaLayerGroup />,
             features: [
                 "API Development",
                 "Database Design",
@@ -120,7 +121,7 @@ const Home = () => {
         {
             title: "Website Maintenance",
             description: "Ongoing support and updates to keep your website secure, fast, and up-to-date with the latest technologies.",
-            icon: "🛠️",
+            icon: <FaCog />,
             features: [
                 "Security Updates",
                 "Content Updates",
@@ -131,18 +132,18 @@ const Home = () => {
         {
             title: "E-Commerce Solutions",
             description: "Online stores with seamless shopping experiences, secure payment gateways, and inventory management.",
-            icon: "🛒",
+            icon: <FaShoppingCart className='text-gray-800' />,
             features: [
                 "Shopping Cart Integration",
                 "Payment Processing",
                 "Product Management",
-                "Order Tracking"
+                "Responsive Design"
             ]
         },
         {
             title: "Consulting",
             description: "Expert advice on technology stack selection, architecture design, and digital strategy for your business.",
-            icon: "📈",
+            icon: <FaUserTie />,
             features: [
                 "Technical Audits",
                 "Project Planning",
@@ -182,7 +183,7 @@ const Home = () => {
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <a
-                            href="#contact"
+                            href="/contact"
                             className="px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
                             style={{
                                 backgroundColor: '#3b82f6',
@@ -192,7 +193,7 @@ const Home = () => {
                             Get In Touch
                         </a>
                         <a
-                            href="#projects"
+                            href="/projects"
                             className="px-8 py-3 rounded-lg font-medium border-2 transition-all duration-300 transform hover:scale-105"
                             style={{
                                 borderColor: '#22d3ee',
@@ -401,7 +402,7 @@ const Home = () => {
 
                     <div className="mt-16 text-center">
                         <a
-                            href="#contact"
+                            href="/contact"
                             className="inline-block px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
                             style={{
                                 backgroundColor: '#3b82f6',

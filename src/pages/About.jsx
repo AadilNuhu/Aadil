@@ -1,5 +1,6 @@
 import img from '../assets/Aadil.jpg'
 import cert from '../assets/cert.png'
+import { FaCog, FaCss3, FaDatabase, FaGit, FaGitAlt, FaGithub, FaHtml5, FaJs, FaNodeJs, FaPhp, FaPython, FaReact, FaWind } from 'react-icons/fa';
 const About = () => {
   const milestones = [
     {
@@ -18,23 +19,25 @@ const About = () => {
       description: "Started taking on client projects, building real-world applications and websites."
     },
     {
-      year: "Now",
+      year: "25",
       title: "Full-Stack Development",
       description: "Combining Front end with Backend to create Full and Complete web applications."
     }
   ];
 
   const skills = [
-    { name: "HTML/CSS", level: 95, icon: "🛠️" },
-    { name: "JavaScript", level: 90, icon: "📜" },
-    { name: "React", level: 85, icon: "⚛️" },
-    { name: "Node.js", level: 80, icon: "🚀" },
-    { name: "Python", level: 75, icon: "🐍" },
-    { name: "Git/GitHub", level: 90, icon: "🐙" },
-    { name: "MySQL", level: 80, icon: "🗃️" },
-    { name: "PHP", level: 75, icon: "🐘" },
-    { name: "Express", level: 85, icon: "✨" },
-    { name: "Tailwind CSS", level: 90, icon: "🎯" }
+    { name: "HTML", level: 95, icon: <FaHtml5 className='text-white'/> },
+    { name: "CSS", level: 95, icon: <FaCss3 className='text-white'/> },
+    { name: "JavaScript", level: 90, icon: <FaJs className='text-white' /> },
+    { name: "React", level: 85, icon: <FaReact className='text-white'/> },
+    { name: "Node.js", level: 80, icon: <FaNodeJs className='text-white' /> },
+    { name: "Python", level: 75, icon: <FaPython className='text-white'/> },
+    { name: "Git", level: 90, icon: <FaGitAlt className='text-white'/> },
+    { name: "GitHub", level: 90, icon: <FaGithub className='text-white'/> },
+    { name: "MySQL", level: 80, icon: <FaDatabase className='text-white'/> },
+    { name: "PHP", level: 75, icon: <FaPhp className='text-white'/> },
+    { name: "Express", level: 85, icon:  <FaCog className='text-white'/>},
+    { name: "Tailwind CSS", level: 90, icon: <FaWind className='text-white'/> }
   ];
 
   return (
@@ -110,7 +113,7 @@ const About = () => {
                   {milestones.map((milestone, index) => (
                     <div key={index} className="relative pl-12">
                       <div
-                        className="absolute top-1 left-0 w-8 h-8 rounded-full flex items-center justify-center"
+                        className="absolute font-bold top-1 left-0 w-8 h-8 rounded-full flex items-center justify-center"
                         style={{ backgroundColor: '#22d3ee', color: '#0f172a' }}
                       >
                         {milestone.year}

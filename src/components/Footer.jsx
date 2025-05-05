@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub,FaPhoneAlt,FaMapPin, FaMailBulk } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -12,19 +12,19 @@ const Footer = () => {
               Building amazing digital experiences for our clients since 2020.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors">
+              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-blue-600 transition-colors">
                 <FaFacebook size={20} />
               </a>
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors">
+              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-blue-300 transition-colors">
                 <FaTwitter size={20} />
               </a>
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors">
+              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-pink-400 transition-colors">
                 <FaInstagram size={20} />
               </a>
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors">
+              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-blue-500 transition-colors">
                 <FaLinkedin size={20} />
               </a>
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors">
+              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-black transition-colors">
                 <FaGithub size={20} />
               </a>
             </div>
@@ -34,11 +34,10 @@ const Footer = () => {
           <div>
             <h4 className="text-md font-semibold dark:text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Services</a></li>
-              <li><a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Portfolio</a></li>
-              <li><a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/" className="hover:text-gray-900 dark:hover:text-white transition-colors">Home</a></li>
+              <li><a href="/about" className="hover:text-gray-900 dark:hover:text-white transition-colors">About Us</a></li>
+              <li><a href="/project" className="hover:text-gray-900 dark:hover:text-white transition-colors">Services</a></li>
+              <li><a href="/contact" className="hover:text-gray-900 dark:hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -49,7 +48,6 @@ const Footer = () => {
               <li><a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Web Development</a></li>
               <li><a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Mobile Apps</a></li>
               <li><a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">UI/UX Design</a></li>
-              <li><a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">Digital Marketing</a></li>
               <li><a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">SEO</a></li>
             </ul>
           </div>
@@ -58,17 +56,17 @@ const Footer = () => {
           <div>
             <h4 className="text-md font-semibold dark:text-white mb-4">Contact Us</h4>
             <ul className="space-y-2">
-              <li className="flex items-start">
-                <span className="mr-2">📍</span>
-                <span>123 Business Ave, Suite 100<br />New York, NY 10001</span>
+              <li className="flex items-center gap-2">
+                <span className="mr-2"><FaMapPin /></span>
+                <span>Teshie Nungua Estate<br />Accra, Ghana</span>
               </li>
-              <li className="flex items-center">
-                <span className="mr-2">📞</span>
-                <span>+1 (555) 123-4567</span>
+              <li className="flex items-center gap-2">
+                <span className="mr-2"><FaPhoneAlt /></span>
+                <span>+233 (245) 829-714</span>
               </li>
-              <li className="flex items-center">
-                <span className="mr-2">✉️</span>
-                <span>aadilnuhu@gmail.com</span>
+              <li className="flex items-center gap-2">
+                <span className="mr-2"><FaMailBulk /></span>
+                <span>aadilnuhu122@gmail.com</span>
               </li>
             </ul>
           </div>
