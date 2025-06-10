@@ -1,6 +1,6 @@
 import img from '../assets/Aadil.jpg'
 import cert from '../assets/cert.png'
-import { FaCog, FaCss3, FaDatabase, FaGit, FaGitAlt, FaGithub, FaHtml5, FaJs, FaNodeJs, FaPhp, FaPython, FaReact, FaWind } from 'react-icons/fa';
+import { FaCog, FaCss3, FaDatabase, FaGitAlt, FaGithub, FaHtml5, FaJs, FaNodeJs, FaPhp, FaPython, FaReact, FaWind } from 'react-icons/fa';
 const About = () => {
   const milestones = [
     {
@@ -67,7 +67,6 @@ const About = () => {
                   boxShadow: '0 0 20px rgba(34, 211, 238, 0.3)'
                 }}
               >
-                {/* Replace with your actual image */}
                 <div
                   className="w-full h-full bg-gray-700 flex flex-start items-center justify-center text-4xl"
                   style={{ color: '#e2e8f0' }}
@@ -92,7 +91,7 @@ const About = () => {
               </h4>
 
               <p className="mb-8">
-                I started my journey as a web developer over 2 years ago, diving deep into the world of front-end and back-end development. My passion for technology and design led me to work on various projects, each adding a new dimension to my skill set.
+                I started my journey as a web developer over 3+ years ago, diving deep into the world of front-end and back-end development. My passion for technology and design led me to work on various projects, each adding a new dimension to my skill set.
               </p>
 
               <p className="mb-8">

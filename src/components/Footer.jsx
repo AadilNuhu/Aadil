@@ -12,19 +12,19 @@ const Footer = () => {
               Building amazing digital experiences for our clients since 2020.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-blue-600 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61562517264706" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-blue-600 transition-colors">
                 <FaFacebook size={20} />
               </a>
               <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-blue-300 transition-colors">
                 <FaTwitter size={20} />
               </a>
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-pink-400 transition-colors">
+              <a href="https://www.instagram.com/aadilcodecraft/" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-pink-400 transition-colors">
                 <FaInstagram size={20} />
               </a>
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-blue-500 transition-colors">
+              <a href="https://www.linkedin.com/in/aadil-nuhu-794054308/" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-blue-500 transition-colors">
                 <FaLinkedin size={20} />
               </a>
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-black transition-colors">
+              <a href="https://github.com/AadilNuhu" className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-black transition-colors">
                 <FaGithub size={20} />
               </a>
             </div>
@@ -36,7 +36,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="/" className="hover:text-gray-900 dark:hover:text-white transition-colors">Home</a></li>
               <li><a href="/about" className="hover:text-gray-900 dark:hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/project" className="hover:text-gray-900 dark:hover:text-white transition-colors">Services</a></li>
+              <li><a href="/projects" className="hover:text-gray-900 dark:hover:text-white transition-colors">Services</a></li>
               <li><a href="/contact" className="hover:text-gray-900 dark:hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
