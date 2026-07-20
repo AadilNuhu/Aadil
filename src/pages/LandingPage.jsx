@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import me from '../assets/Aadil.jpg'
 import profile from '../assets/me.png'
 
@@ -122,15 +123,17 @@ const LandingPage = () => {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                            <a
-                                href="/contact"
+                            <Link
+                                to="/cv"
+                                // target="_blank"
+                                rel="noopener noreferrer"
                                 className="px-5 md:px-7 py-3 rounded-md font-medium text-sm transition-colors duration-200"
                                 style={{ backgroundColor: COLORS.accent, color: '#0b1120' }}
                                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#67e8f9')}
                                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = COLORS.accent)}
                             >
-                                Get in touch
-                            </a>
+                                View CV
+                            </Link>
                             <a
                                 href="/projects"
                                 className="px-5 md:px-7 py-3 rounded-md font-medium text-sm border transition-colors duration-200"

@@ -7,6 +7,7 @@ import NotFound from './NotFound'
 import About from './pages/About'
 import Project from './pages/Project'
 import Contact from './pages/Contact'
+import CV from "./pages/CV"
 import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Project />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/cv' element={<CV />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

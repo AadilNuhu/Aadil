@@ -106,8 +106,8 @@ const MiniAbout = () => {
                                 {STACK.map((tech) => (
                                     <span
                                         key={tech}
-                                        className="px-3 py-1.5 rounded-md text-sm border"
-                                        style={{ borderColor: COLORS.border, color: COLORS.text }}
+                                        className="px-3 py-1.5 rounded-md text-sm border border-gray-600"
+                                        style={{ color: COLORS.text }}
                                     >
                                         {tech}
                                     </span>
@@ -122,7 +122,7 @@ const MiniAbout = () => {
                             <div
                                 key={stat.label}
                                 className="p-5 rounded-lg border"
-                                style={{ backgroundColor: COLORS.card, borderColor: COLORS.border }}
+                                style={{ backgroundColor: COLORS.card, borderColor: COLORS.accent }}
                             >
                                 <p
                                     className="text-2xl font-bold mb-1"
