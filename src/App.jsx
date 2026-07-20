@@ -12,20 +12,17 @@ import './App.css'
 function App() {
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/about' element={<About />}/>
-          <Route path='/projects' element={<Project />}/>
-          <Route path='/contact' element={<Contact />}/>
-          <Route path='*' element={<NotFound />}/>
-        </Routes>
-      </BrowserRouter>
-          {/* <Home /> */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/projects' element={<Project />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 

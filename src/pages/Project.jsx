@@ -1,128 +1,86 @@
 import { useState } from 'react';
 import srafa from '../assets/srafa.png';
 import realEstate from '../assets/realestate.png';
-import ageCalculator from '../assets/age-calculator.png';
-import nufaz from '../assets/nufaz.png';
-import webora from '../assets/webora.png';
-import calculator from '../assets/calculator.png';
-import random from '../assets/randomuser.png';
-import todoapp from '../assets/todoapp.png';
-import rockPaperScissors from '../assets/rockpaperscissors.png';
-import photopit from '../assets/photo pit screen.png';
-import rating from '../assets/interactive-rating-component.png';
+import genzstack from '../assets/genzstack.png';
+import cineroll from '../assets/cineroll.png';
+import nextflix from '../assets/nextflix.png';
+import webora from "../assets/webora.png"
+import whitelines from "../assets/2i.png"
+
 
 const Project = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  // Reduced and unified categories
   const projects = [
     {
       id: 1,
-      title: "Nufaz E-Commerce",
-      description: "A full-featured online store with secure payments, product management, and a modern admin dashboard.",
-      tags: ["React", "Node.js", "MongoDB"],
-      category: "Web App",
-      image: nufaz,
-      link: "https://www.aadilnuhu.store/"
+      title: 'GENZStack',
+      description: 'A community-driven platform for developers to ask questions, share knowledge, and showcase projects.',
+      tags: ['React', 'Node.js', 'Express', 'PostgreSQL'],
+      category: 'Full Stack',
+      image: genzstack,
+      link: 'https://genzstack.vercel.app/'
     },
     {
       id: 2,
-      title: "Srafa Islamic School",
-      description: "A dynamic educational website with course listings, events, and admissions for Srafa Islamic School.",
-      tags: ["React", "Tailwind CSS"],
-      category: "Web App",
-      image: srafa,
-      link: "https://srafaimmunaislamic.vercel.app/"
+      title: 'CineRoll',
+      description: 'A personal movie watchlist app where users can organize titles, update details, and manage posters.',
+      tags: ['React', 'Node.js', 'Express', 'PostgreSQL'],
+      category: 'Full Stack',
+      image: cineroll,
+      link: 'https://cinerollio.vercel.app/'
     },
     {
       id: 3,
-      title: "Real Estate Manager",
-      description: "A property management platform for listing, searching, and managing real estate properties.",
-      tags: ["React", "Firebase"],
-      category: "Web App",
-      image: realEstate,
-      link: ""
+      title: 'Nextflix',
+      description: 'A modern movie discovery experience focused on browsing trending titles and exploring new releases.',
+      tags: ['React', 'Tailwind CSS'],
+      category: 'Frontend',
+      image: nextflix,
+      link: 'https://nextflixhub.vercel.app'
     },
     {
       id: 4,
-      title: "Age Calculator",
-      description: "Quickly calculate your age in years, months, and days with this easy-to-use tool.",
-      tags: ["React", "JavaScript"],
-      category: "Utility",
-      image: ageCalculator,
-      link: "https://age-calculator-app.vercel.app/"
+      title: 'Srafa Islamic School',
+      description: 'A polished educational website with course highlights, school events, and admission information.',
+      tags: ['React', 'Tailwind CSS'],
+      category: 'Frontend',
+      image: srafa,
+      link: 'https://srafaimmunaislamic.vercel.app/'
     },
     {
       id: 5,
-      title: "Webora Agency",
-      description: "A creative agency portfolio site with service showcases, project highlights, and client testimonials.",
-      tags: ["JavaScript", "API"],
-      category: "Web App",
-      image: webora,
-      link: "https://webora.vercel.app/"
+      title: 'Real Estate Manager',
+      description: 'A property management platform built for browsing, searching, and organizing real estate listings.',
+      tags: ['Angular', 'Tailwind'],
+      category: 'Full Stack',
+      image: realEstate,
+      link: 'https://estate-agency-sable.vercel.app/'
     },
     {
       id: 6,
-      title: "Calculator App",
-      description: "A sleek calculator app for basic arithmetic, featuring a clean and responsive design.",
-      tags: ["React", "CSS"],
-      category: "Utility",
-      image: calculator,
-      link: "https://calculator-app-phi-flax.vercel.app/"
+      title: 'Webora',
+      description: 'A responsive web development agency website that highlights professional web design, development, and branding services for businesses of all sizes.',
+      tags: ['React', 'Tailwind'],
+      category: 'Frontend',
+      image: webora,
+      link: 'https://webora.vercel.app/'
     },
     {
       id: 7,
-      title: "Random User Generator",
-      description: "Generate random user profiles with photos and details for testing and demo purposes.",
-      tags: ["React", "API"],
-      category: "Utility",
-      image: random,
-      link: "https://calculator-app-phi-flax.vercel.app/"
+      title: '2I Whitelines',
+      description: "A responsive car rental, sales, and export website designed to help customers browse available vehicles, explore services, and make inquiries with ease.", tags: ['React', 'Tailwind'],
+      category: 'Frontend',
+      image: whitelines,
+      link: 'https://2i-whitelines.vercel.app/'
     },
-    {
-      id: 8,
-      title: "Todo App",
-      description: "A productivity app for managing your daily tasks with a simple and intuitive interface.",
-      tags: ["React", "LocalStorage"],
-      category: "Utility",
-      image: todoapp,
-      link: ""
-    },
-    {
-      id: 9,
-      title: "Rock Paper Scissors Game",
-      description: "A fun and interactive rock-paper-scissors game with score tracking and smooth animations.",
-      tags: ["React", "Game"],
-      category: "Game",
-      image: rockPaperScissors,
-      link: "https://calculator-app-phi-flax.vercel.app/"
-    },
-    {
-      id: 10,
-      title: "Photo Pit Gallery",
-      description: "A beautiful gallery app for uploading, browsing, and sharing high-quality images.",
-      tags: ["React", "Gallery"],
-      category: "Media",
-      image: photopit,
-      link: "https://calculator-app-phi-flax.vercel.app/"
-    },
-    {
-      id: 11,
-      title: "Interactive Rating Component",
-      description: "A reusable and interactive rating component for collecting user feedback with a modern UI.",
-      tags: ["React", "Component"],
-      category: "UI Component",
-      image: rating,
-      link: "https://calculator-app-phi-flax.vercel.app/"
-    }
   ];
 
-  // Only main categories
-  const categories = ['All', 'Web App', 'Utility', 'Game', 'Media', 'UI Component'];
+  const categories = ['All', 'Full Stack', 'Frontend'];
 
   const filteredProjects = activeFilter === 'All'
     ? projects
-    : projects.filter(project => project.category === activeFilter);
+    : projects.filter((project) => project.category === activeFilter);
 
   return (
     <section
@@ -139,11 +97,10 @@ const Project = () => {
             style={{ backgroundColor: '#22d3ee' }}
           ></div>
           <p className="max-w-2xl mx-auto text-lg" style={{ color: '#e2e8f0' }}>
-            Explore a selection of my recent projects, including web apps, utilities, games, and more.
+            A curated selection of projects grouped by focus, from full-stack products to polished front-end experiences.
           </p>
         </div>
 
-        {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {categories.map((category) => (
             <button
@@ -156,7 +113,6 @@ const Project = () => {
           ))}
         </div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <div
@@ -212,19 +168,6 @@ const Project = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <a
-            href="/projects"
-            className="inline-block px-8 py-3 rounded-lg font-medium border-2 transition-all duration-300 transform hover:scale-105"
-            style={{
-              borderColor: '#22d3ee',
-              color: '#22d3ee'
-            }}
-          >
-            View All Projects
-          </a>
         </div>
       </div>
     </section>
